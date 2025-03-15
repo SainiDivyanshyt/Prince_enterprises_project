@@ -1,0 +1,298 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and Font Setup */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header - Navigation Bar */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #000;
+  color: white;
+  padding: 1px 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+   color: rgba(0, 0, 0, 0.764);
+   background: hsla(333, 100%, 53%, 1);
+
+background: linear-gradient(90deg, rgb(0, 152, 111) 0%, rgb(7, 141, 230) 100%);
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+
+header nav ul li {
+  margin-left: 30px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;  
+  transition: color 0.3s ease;
+
+} 
+
+header nav ul li a:hover {
+  color: #35e509;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background: url("https://images.pexels.com/photos/305070/pexels-photo-305070.jpeg?auto=compress&cs=tinysrgb&w=400")center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: rgb(177, 236, 13);  
+  padding: 0 20px;
+
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  background-color: #e50914;
+  padding: 12px 40px;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 25px;
+  color: rgb(10, 6, 4);
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #b20710;
+  font-weight: bold;
+}
+
+/* Features Section */
+.features {
+  padding: 60px 20px;
+  background-color: #f9ebeb;
+  text-align: center;
+  background: linear-gradient(135deg, #393939, #393939);
+
+}
+
+.features h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #000000;
+}
+
+.feature-cards  {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  
+}
+
+.card {
+  background-color: #2f2f2f;
+  padding: 30px;
+  width: 250px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 1px 10px 14px rgba(255, 255, 255, 0.5);
+  color: #ffffff;
+}
+
+.card h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.card p {
+  font-size: 16px;
+}
+
+/* Pricing Section */
+.pricing {
+  background-color: #f4f4f4;
+  padding: 60px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #393939, #393939);
+}
+
+.pricing h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #f9f9f9;
+}
+
+.plans {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.plan {
+  background-color: #2f2f2f;
+  padding: 40px;
+  width: 300px;
+  border-radius: 8px;
+  box-shadow: 1px 10px 14px rgba(255, 255, 255, 0.5);
+  color:  #ffffff;;
+}
+
+.plan h3 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.plan p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.plan .cta-button {
+  padding: 10px 20px;
+}
+/* img tags */
+div {
+  text-align: center; 
+  padding: 20px;
+}
+
+img:hover {
+  transform: scale(1.05);
+  box-shadow: 5 5px 10px rgba(245, 5, 125, 0.432);
+  filter: red(0%);
+  filter: blur(3px);
+  transform: rotate(10deg);
+  transform: rotateY(180deg); 
+  transform: translateY(-5px);
+  filter: sepia(100%);
+  transform: scale(1.05);
+   
+}
+img {
+  width: 100%; 
+  max-width: 600px;
+  height: auto; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+
+/* Contact Section */
+.contact {
+  background-color: #333;
+  padding: 60px 20px;
+  color: rgb(255, 253, 253);
+  text-align: center;
+  background: linear-gradient(135deg, #393939, #393939);
+}
+
+.contact h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #f9f9f9;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  
+}
+
+.contact input, .contact textarea {
+  width: 50%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+}
+
+.contact button {
+  background-color: #a9a6a6;
+  color: white;
+  padding: 12px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #06da85, #b3ec08);
+}
+
+.contact button:hover {
+  background-color: #b20710;
+  
+}
+
+/* Footer */
+footer {
+  background-color: #111;
+  color: #777;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .feature-cards {
+      flex-direction: row;
+      gap: 20px;
+  }
+
+  .plans {
+      flex-direction: row;
+      gap: 30px;
+  }
+  .cta-button{
+    background-color: #e50914;
+    padding: 8px 30px;
+    font-size: 12px;
+    text-decoration: none;
+    border-radius: 25px;
+    color: rgb(6, 255, 188);
+    transition: background-color 0.3s ease;
+
+
+  }
+
+  .contact form {
+      width: 90%;
+  }
+}
